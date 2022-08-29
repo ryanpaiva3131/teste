@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <title> SA - DevWeb </title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <style>
+            * {
+    padding: 0;
+    margin: 0;
+  }
+  
+
+#login {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: auto;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+} 
+
+
+.card {
+
+    background-color: rgba(19, 19, 19, 0.3);
+
+    padding: 40px;
+
+    border-radius: 2px;
+
+    width:35vw;
+
+    height: auto;
+
+}
+
+.card-header {
+
+    padding-bottom: 90px;
+
+    opacity: 0.8;
+
+    color: #fff;
+    text-align: center;
+    
+
+}
+
+.card-header::after {
+
+    content: "";
+
+    width: 70px;
+
+    height: 1px;
+
+    background-color: #fff;
+
+    display: block;
+
+    margin-top: -17px;
+
+    margin-left: -5px;
+
+}
+
+.card-content label {
+
+    color: #fff;
+
+    font-size: 12px;
+
+    opacity: 0.8;
+
+}
+
+.card-content-area {
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding:10px 0;
+
+}
+
+.card-content-area input {
+
+    margin-top: 10px;
+
+    padding:0 5px;
+
+    background-color: transparent;
+
+    border:none;
+
+    border-bottom: 1px solid #e1e1e1;
+
+    outline: none;
+
+    color: #fff;
+
+}
+
+.card-footer {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.card-footer .submit{
+
+    width: 100%;
+
+    height: 40px;
+
+    background-color: #a13854;
+
+    border:none;
+
+    color:#e1e1e1;
+
+    margin: 10px 0;
+
+    cursor: pointer;
+
+}
+
+#cadastro{
+
+    display: none;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: auto;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+}
+
+p{
+    line-height: 20px;
+}
+        </style>
+
+    </head>
+
+    <body>
+        <div class="pagina-login">
+    <main>
+        <div id="cadastro">
+        <form name="cad" class="card">
+            <div class="card-header">
+
+                <h2> Cadastro </h2>
+
+            </div>
+            <div class="card-content-area">
+            <label>Nome: </label>
+            
+            <input type="text" name="nome" id="nome" required/>
+            </div>
+            
+            <div class="card-content-area">
+            <label> Telefone: </label>
+            <input type="tel" name="telfone" id="telefone" required/>
+            </div>
+            
+            <div class="card-content-area">
+            <label> E-mail: </label>
+            <input type="email" name="mail" id="mail" required/>
+            </div>
+
+           <div class="card-content-area">
+            <label> CPF: </label>
+            
+            <input type="text" name="cpf" id="cpf" required/>
+            </div>
+
+            <div class="card-content-area">
+            <label> Endereço: </label>
+          
+            <input type="text" name="end" id="end" required/>
+            </div>
+
+            <div class="card-content-area">
+            <label> Senha: </label>
+            
+            <input type="password" name="senha" id="senha" required/>
+            </div>
+             
+             <div class="card-footer">
+             <input class="submit" type="submit" name="enviar" id="enviar" value="ENVIAR" onclick="add()"/>   
+             <input class="submit" type="reset" id="limpar" name="limpar" value="LIMPAR"/> 
+             </div>
+        </form>
+        </div>   
+        
+        <div id="login">
+
+            <form class="card">
+
+                <div class="card-header">
+
+                    <h2>Login</h2>
+
+                </div>
+
+                <div class="card-content">
+
+                    <div class="card-content-area">
+
+                        <label for="usuario">E-mail</label>
+
+                        <input type="text" id="mail2" autocomplete="off">
+
+                    </div>
+
+                    <div class="card-content-area">
+
+                        <label for="password">Senha</label>
+
+                        <input type="password" id="senha2" autocomplete="off">
+
+                    </div>
+
+                </div>
+
+                <div class="card-footer">
+
+                    <div class="submit" onclick="validar()"> <p align="center"> Login  </p> </div>
+                    
+                    <div class="submit" onclick="menucadastro()"> <p align="center"> Cadastro  </p> </div>
+
+                </div>
+
+            </form>
+
+        </div> 
+        </div> 
+
+
+        <div class="pagina-inicial">
+
+        <div class="wrapper">
+            <nav>
+              <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox">
+              <label class="m-menu__toggle" for="menu">
+                <div class="linha1"></div>
+                <div class="linha2"></div>
+                <div class="linha3"></div>
+              </label>
+              <div class="logo">
+                <a href="./index.html" class="home"><img src="./inicial/img/logo.png" class="imglogo"></a>
+              </div>
+              <label class="m-menu_fora" for="menu">
+                <div></div>
+              </label>
+              <div class="m-menu">
+                <div class="m-menu__header">
+                    <label class="m-menu__toggle" for="menu">
+                    
+                    </label>
+                  <span>MENU</span>
+                </div>
+                <ul>
+                  <li><label><a href="./index.html">Home</a></label></li>
+                  <li><label><a href="./sobre/sobre.html">Sobre</a></label></li>
+                  <li><label><a href="./contato/contato.html">Contato</a></label></li>
+                  <li>
+                    <label class="label-lista" for="item-2"><a>Matérias e Avaliação</a></label>
+                    <input type="checkbox" id="item-2" name="item-2" class="m-menu__checkbox">
+                    <div class="m-menu">
+                      <div class="m-menu__header">
+                        <label class="m-menu__toggle" for="item-2">
+                            
+                        </label>
+                        <span>Materias e Avaliação</span>
+                      </div>
+                      <ul>
+                        <li>
+                        <label class="label-lista" for="item-2-1"><a>Avaliação</a></label>
+                          <input type="checkbox" id="item-2-1" name="item-2-1" class="m-menu__checkbox">
+                          <div class="m-menu">
+                            <div class="m-menu__header">
+                                <label class="m-menu__toggle" for="item-2-1">
+                                    
+                                </label>
+                              <span>Avaliação</span>
+                            </div>
+                            <ul>
+                              <li><label><a href="./Prova - Sa/prova.html">Prova</a></label></li>
+                            </ul>
+                          </div>
+                        </li>
+                        <li>
+                          <label class="label-lista" for="item-2-2"><a>Matérias</a></label>
+                          <input type="checkbox" id="item-2-2" name="item-2-2" class="m-menu__checkbox">
+                          <div class="m-menu">
+                            <div class="m-menu__header">
+                                <label class="m-menu__toggle" for="item-2-2">
+                                    
+                                </label>
+                              <span>Matérias </span>
+                            </div>
+                            <ul>
+                              <li><label><a href="./introducao/introducao.html">Introdução</a></label></li>
+                              <li><a href="./conteudo1/conteudo1.html"><label>Conteudo 1</label></a></li>
+                  <li><label><a href="./conteudo2/conteudo2.html">Conteudo 2</a></label></li>
+                  <li><label><a href="./conteudo3/conteudo3.html">Conteudo 3</a></label></li>
+                  <li><label><a href="./conteudo4/conteudo4.html">Conteudo 4</a></label></li>
+                  <li><label><a href="./conteudo5/conteudo5.html">Conteudo 5</a></label></li>
+                  <li><label><a href="./conteudo6/conteudo6.html">Conteudo 6</a></label></li>
+                            </ul>                
+                        </li>
+                    </div>
+                  </li>
+                  <li><label id="logout"><a href="./index.html">Log Out</a></label></li>
+                </ul>  
+              </div>
+            </nav>
+
+            <div class="perfil">
+              <img src="./img/perfil.png">
+              <h2 id="bemvindo"> Bem Vindo De Volta <br>
+                Continue de onde parou e bons estudo!!!</h2>
+            </div>
+
+            <div class="container">
+              <div class="item">
+                
+                <a href="./introducao/introducao.html"><img class="img1" src="./img/powerpoint.png"></a>
+                <h2> Introdução ao powerpoint </h2>
+                <input type="checkbox" id="item2" name="item2" value="true" class="slide-checkbox">
+                <label class="slider-toggle" for="item2"></label>
+
+              <div class="item">
+                <a href="./conteudo1/conteudo1.html"><img class="img2" src="./img/tema.png"></a>
+                <h2> Temas </h2>
+              <label class="slider-toggle1" for="item2"></label>
+              <input type="checkbox" id="item3" name="item3" class="slide-checkbox">
+              <label class="slider-toggle" for="item3"></label>
+
+              
+              <div class="item">
+                <a href="./conteudo2/conteudo2.html"><img class="img2" src="./img/slide.jpg"></a>
+                <h2> Manipular Slides </h2>
+                <label class="slider-toggle1" for="item3"></label>
+                <input type="checkbox" id="item4" name="item4" class="slide-checkbox">
+                <label class="slider-toggle" for="item4"></label>
+              
+                <div class="item">
+                  <a href="./conteudo3/conteudo3.html"><img class="img2" src="./img/salvar.png"></a>
+                  <h2> Salvar Slides </h2>
+                <label class="slider-toggle1" for="item4"></label>
+                <input type="checkbox" id="item5" name="item5" class="slide-checkbox">
+                <label class="slider-toggle" for="item5"></label>
+                
+                <div class="item">
+                  <a href="./conteudo4/conteudo4.html"><img class="img2" src="./img/texto.jpg"></a>
+                <h2> Manipular Textos </h2>
+                <label class="slider-toggle1" for="item5"></label>
+                <input type="checkbox" id="item6" name="item6" class="slide-checkbox">
+                <label class="slider-toggle" for="item6"></label>
+                
+                <div class="item">
+                  <a href="./conteudo5/conteudo5.html"><img class="img2" src="./img/imagem.jpg"></a>
+                <h2> Manipular Imagens </h2>
+                <label class="slider-toggle1" for="item6"></label>
+                <input type="checkbox" id="item7" name="item7" class="slide-checkbox">
+                <label class="slider-toggle" for="item7"></label>
+                
+                <div class="item">
+                  <a href="./conteudo6/conteudo6.html"><img class="img2" src="./img/apresentacao.jpg"></a>
+                <h2> Apresentações </h2>
+                <label class="slider-toggle1" for="item7"></label>
+
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+          </div>
+        </div>
+    </body>
+    <script src="./script.js"></script>
+</html>
+
+    </body>
+    <script src="script.js"></script>
+</html>

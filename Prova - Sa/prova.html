@@ -1,0 +1,693 @@
+<!DOCTYPE html> 
+    <html lang ="pt-br">
+        
+        <head>
+            <title> Prova Sa  </title>
+            <meta charset ="utf-8">
+            <meta nome="viewport"content="width=device-width, initial-scale=1"/>
+            <link rel="stylesheet" href="./prova.css"/>
+        </head>
+        
+        <body> 
+            
+            <div  class="wrapper">
+                <nav>
+                  <input type="checkbox" id="menu" name="menu" class="m-menu__checkbox">
+                  <label class="m-menu__toggle" for="menu">
+                    <div class="linha1"></div>
+                    <div class="linha2"></div>
+                    <div class="linha3"></div>
+                  </label>
+                  <label class="m-menu_fora" for="menu">
+                    <div></div>
+                  </label>
+                  <div class="m-menu">
+                    <div class="m-menu__header">
+                        <label class="m-menu__toggle" for="menu">
+                        
+                        </label>
+                      <span>MENU</span>
+                    </div>
+                    <ul>
+                      <li><label><a href="/inicial/inicial.html">Home</a></label></li>
+                      <li><label><a href="/sobre/sobre.html">Sobre</a></label></li>
+                      <li><label><a href="/contato/contato.html">Contato</a></label></li>
+                      <li>
+                        <label class="label-lista" for="item-2"><a>Matérias e Avaliação</a></label>
+                        <input type="checkbox" id="item-2" name="item-2" class="m-menu__checkbox">
+                        <div class="m-menu">
+                          <div class="m-menu__header">
+                            <label class="m-menu__toggle" for="item-2">
+                                
+                            </label>
+                            <span>Materias e Avaliação</span>
+                          </div>
+                          <ul>
+                            <li>
+                            <label class="label-lista" for="item-2-1"><a>Avaliação</a></label>
+                              <input type="checkbox" id="item-2-1" name="item-2-1" class="m-menu__checkbox">
+                              <div class="m-menu">
+                                <div class="m-menu__header">
+                                    <label class="m-menu__toggle" for="item-2-1">
+                                        
+                                    </label>
+                                  <span>Avaliação</span>
+                                </div>
+                                <ul>
+                                  <li><label><a href="/Prova - Sa/prova.html">Prova</a></label></li>
+                                </ul>
+                              </div>
+                            </li>
+                            <li>
+                              <label class="label-lista" for="item-2-2"><a>Matérias</a></label>
+                              <input type="checkbox" id="item-2-2" name="item-2-2" class="m-menu__checkbox">
+                              <div class="m-menu">
+                                <div class="m-menu__header">
+                                    <label class="m-menu__toggle" for="item-2-2">
+                                        
+                                    </label>
+                                  <span>Matérias </span>
+                                </div>
+                                <ul>
+                                  <li><label><a href="/introducao/introducao.html">Introdução</a></label></li>
+                                  <li><a href="/conteudo1/conteudo1.html"><label>Conteudo 1</label></a></li>
+                      <li><label><a href="/conteudo2/conteudo2.html">Conteudo 2</a></label></li>
+                      <li><label><a href="/conteudo3/conteudo3.html">Conteudo 3</a></label></li>
+                      <li><label><a href="/conteudo4/conteudo4.html">Conteudo 4</a></label></li>
+                      <li><label><a href="/conteudo5/conteudo5.html">Conteudo 5</a></label></li>
+                      <li><label><a href="/conteudo6/conteudo6.html">Conteudo 6</a></label></li>
+                                </ul>                
+                            </li>
+                        </div>
+                      </li>
+                      <li><label id="logout"><a href="/index.html">Log Out</a></label></li>
+                    </ul>  
+                  </div>
+                </nav>
+
+            <div id="inicio">
+            <fieldset class="fieldset1">       
+                <h2><strong> Avaliação final - PowerPoint </h2></strong>
+                <section align="center">
+                    <p> O objetivo dessa avaliação é testar o conhecimento e compreensão do aluno sobre os temas vistos nesse módulo. </p>
+                    <p> Boa sorte !! </p>
+                </section>
+                
+                <legend> Informe seus Dados </legend>
+                <form action="#" method="post" name="fale">
+                  <label> Nome: </label>
+                  <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required/>
+                  <br/><br/>
+                  <label> Email: </label>
+                  <input type="email" id="mail" name="mail" placeholder="Digite seu e-mail" required/>
+                  <br/><br/>
+                  </form>
+                  <button id="btn-prova" onclick="chamarprova()">Seguir</button>
+                </fieldset>
+            </div>
+            
+            <div id="avaliacao">
+                <fieldset class="fieldset2">
+
+                        <div class="div"> 
+
+                            <h3 align="center"><strong> Avaliação final - PowerPoint </h3></strong>
+                           
+                            <p> 1 - Como escolher tema no Powerpoint? Escolha a opção correta, no qual descreva os passos corretos para a escolha do tema.                            </p>
+                            <label> 
+                                <input type="radio" id="questao" name="questao" value="1" required/>
+                                Na guia Arquivos da Faixa de opções, selecione Novo e, em seguida, escolha um tema.PowerPoint exibe uma visualização do tema, com quatro variações de cor para escolher no lado direito. Clique em Criar ou selecione uma variação de cor.
+                            </label>
+                            <br/>
+                            <label> 
+                                <input type="radio" id="questao" name="questao" value="2" required/>
+                                Na guia Exibir da Faixa de opções, selecione Criar e, em seguida, escolha um tema.PowerPoint exibe uma visualização do tema, com quatro variações de cor para escolher no lado direito. Clique em Novo ou selecione uma variação de cor.
+
+
+                            </label>
+                            <br/>
+                            <label> 
+                                <input type="radio" id="questao" name="questao" value="3" required/>
+                                Na guia Apresentação da Faixa de opções, selecione Criar 
+
+                            </label>
+                            <br/>
+                            <label> 
+                                <input type="radio" id="questao" name="questao" value="4"required/>
+                                PowerPoint exibe uma visualização do tema, com quatro variações de cor para escolher no lado direito. Clique em Criar ou selecione uma variação de cor.
+
+
+                            </label>
+                            <br/>
+                           
+                            <label> 
+                                <input type="radio" id="questao" name="questao" value="5" required/>
+                                Na guia Criar da Faixa de opções, selecione Exibir e, em seguida, escolha um tema.PowerPoint exibe uma visualização do tema, com quatro variações de cor.
+
+
+                            </label>
+                             <br/> 
+                            <p> 2- Como inserir um novo slide?  Escolha a opção correta, no qual descreva os passos corretos para inserir um slide.                            </p>
+                            <label> 
+                                <input type="radio" id="questao1" name="questao1" value="1" required/>
+                                Na guia Design, clique na metade inferior do Slide e escolha um layout de slide.
+
+                            </label>
+                            <br/>
+                            <label> 
+                                <input type="radio" id="questao1" name="questao1" value="2" required/>
+                                Clique na parte inferior da guia Arquivo e escolha um layout de slide.
+
+
+
+                            </label>
+                            <br/>
+                            <label> 
+                                <input type="radio" id="questao1" name="questao1" value="3"required/>
+                                Na guia Página Inicial, clique na metade inferior do Novo Slide e escolha um layout de slide.
+
+                            </label>
+                            <br/>
+                            <label> 
+                                <input type="radio" id="questao1" name="questao1" value="4" required/>
+                                Escolha um layout de slide da guia novo Slide.
+
+
+
+                            </label>
+                            <br/>
+                            <label> 
+                                <input type="radio" id="questao1" name="questao1" value="5" required/>
+                                Na guia Exibir, clique na metade inferior do Arquivo e escolha um layout de slide.
+                            </label>
+                            <br/>
+                            <p> 3 - É um programa de criação e edição de apresentações de slides, para Windows, Android e iOS, que faz parte do pacote Office. A ferramenta disponibiliza recursos como edição de vídeos e novos efeitos de imagens e é bem fácil de utilizar. Os menus estão em uma barra superior, onde você pode configurar o tema da apresentação, o fundo dos slides, as transições e animações. Além de configurar a fonte e os diversos outros recursos disponibilizados pelo software.
+                                Marque a alternativa CORRETA que corresponde ao contexto acima.
+                                </p>
+                            <label> 
+                                <input type="radio" id="questao2" name="questao2" value="1" required/>
+                                Microsoft Edge.
+
+
+                            </label>
+                            <br/>
+                            <label> 
+                                <input type="radio" id="questao2" name="questao2" value="2" required/>
+                                Microsoft Excel.
+
+
+
+
+                            </label>
+                            <br/>
+                            <label> 
+                                <input type="radio" id="questao2" name="questao2" value="3" required/>
+                                Microsoft Word.
+
+
+                            </label>
+                            <br/>
+                            <label> 
+                                <input type="radio" id="questao2" name="questao2" value="4" required/>
+                                Microsoft PowerPoint.
+
+
+                            </label>
+                            <br/>
+                            <label> 
+                                <input type="radio" id="questao2" name="questao2" value="5" required/>
+                                Microsoft Outlook. 
+
+                            </label>
+                            <br/> 
+
+
+                            <p> 4 - Jorge precisa excluir uma sequência de slides de uma apresentação do PowerPoint para apresentar para sua sala. Qual comando Jorge deve fazer para excluir esses slides juntos? 
+
+                                </p>
+                            <label> 
+                                <input type="radio" id="questao3" name="questao3" value="1" required/>
+                                Pressionar e segurar a tecla Shift, no painel de miniaturas à direita, selecionar os slides. Libere a tecla Shift. Em seguida, clicar com o botão esquerdo na seleção e escolha Excluir. 
+
+
+
+                            </label>
+                            <br/>
+                            <label> 
+                                <input type="radio" id="questao3" name="questao3" value="2" required/>
+                                Clique com o botão direito do slide no painel de miniaturas à esquerda e selecione Excluir Slide.
+
+
+
+                            </label>
+                            <br/>
+                            <label> 
+                                <input type="radio" id="questao3" name="questao3" value="3" required/>
+                                Pressionar e segurar a tecla  Ctrl, no painel de miniaturas à direita, selecionar os slides. Libere a tecla  Ctrl Em seguida, clicar com o botão esquerdo na seleção e escolha Excluir.
+
+
+                            </label>
+                            <br/>
+                            <label> 
+                                <input type="radio" id="questao3" name="questao3" value="4" required/>
+                                Clique com o botão esquerdo do slide no painel de miniaturas à esquerda e selecione Excluir.
+
+
+
+                            </label>
+                            <br/>
+                            <label> 
+                                <input type="radio" id="questao3" name="questao3" value="5" required/>
+                                Pressionar e segurar a tecla Shift e no painel de miniaturas à esquerda, selecione o primeiro e o último slide na sequência. Solte a tecla Shift. Em seguida, clicar com o botão direito na seleção e escolha Excluir Slide.
+
+
+                            </label>
+                            <br/>
+
+
+                            
+                            <p> 5 - Como salvar apresentação? Escolha a opção correta, no qual descreva os passos corretos para salvar.
+
+
+
+                            </p>
+                        <label> 
+                            <input type="radio" id="questao4" name="questao4" value="1" required/>
+                            Na guia Apresentação, escolha Salvar.Selecionar ou navegar até uma pasta.Na caixa Nome, digite um nome para a apresentação e escolha Salvar.
+
+
+
+
+                        </label>
+                        <br/>
+                        <label> 
+                            <input type="radio" id="questao4" name="questao4" value="2" required/>
+                            Na guia Arquivo, escolha Salvar.Selecionar ou navegar até uma pasta.Na caixa Nome do arquivo, digite um nome para a apresentação e escolha Salvar.
+
+
+
+
+                        </label>
+                        <br/>
+                        <label> 
+                            <input type="radio" id="questao4" name="questao4" value="3" required/>
+                            Selecionar ou navegar até uma pasta.Na caixa Nome da guia Exibir, digite um nome para a apresentação e escolha Salvar. 
+
+
+
+                        </label>
+                        <br/>
+                        <label> 
+                            <input type="radio" id="questao4" name="questao4" value="4" required/>
+                            Escolha Salvar da guia Revisão.Selecionar ou navegar até uma pasta.Na caixa Nome do arquivo e clique em Salvar.
+
+
+
+
+
+                        </label>
+                        <br/>
+                        <label> 
+                            <input type="radio" id="questao4" name="questao4" value="5" required/>
+                            Na guia Inserir, escolha Salvar.Selecionar ou navegar até uma pasta.Na caixa Nome, digite um nome para a apresentação e escolha Salvar.
+
+
+                        </label>
+                        <br/>
+
+                        <p> 6 - Ana  edita sua apresentação com frequência no PowerPoint, para facilitar na hora  
+                            de salvar que comando Ana deve fazer para salvar com facilidade as suas edições? 
+                            
+
+
+                        </p>
+                    <label> 
+                        <input type="radio" id="questao5" name="questao5" value="1" required/>
+                        Ctrl+D
+
+
+
+
+                    </label>
+                    <br/>
+                    <label> 
+                        <input type="radio" id="questao5" name="questao5" value="2" required/>
+                        Ctrl+Shift
+
+
+
+                    </label>
+                    <br/>
+                    <label> 
+                        <input type="radio" id="questao5" name="questao5" value="3" required/>
+                        Ctrl+E
+
+
+                    </label>
+                    <br/>
+                    <label> 
+                        <input type="radio" id="questao5" name="questao5" value="4" required/>
+                        Ctrl+S
+
+
+
+
+                    </label>
+                    <br/>
+                    <label> 
+                        <input type="radio" id="questao5" name="questao5" value="5" required/>
+                        Ctrl+D+I 
+
+
+
+                    </label>
+                    <br/>
+
+
+                        <p> 7 - No Microsoft PowerPoint,
+
+                            
+                        </p>
+                    <label> 
+                        <input type="radio" id="questao6" name="questao6" value="1" required/>
+                        adota-se uma estrutura de slide inicial para uma apresentação por meio de Apresentação de Slides→ Layout→ Estrutura inicial→ Slide de título.
+
+
+
+                    </label>
+                    <br/>
+                    <label> 
+                        <input type="radio" id="questao6" name="questao6" value="2" required/>
+                        uma imagem pode ser inserida em um slide por meio de Design→ Configurar página→ Marcação de arquivo de imagem→ Abrir.
+
+
+
+
+                    </label>
+                    <br/>
+                    <label> 
+                        <input type="radio" id="questao6" name="questao6" value="3" required/>
+                        uma imagem pode ser inserida em um slide por meio de Exibição→ Imagem→ Marcação de arquivo de imagem→ Inserir.
+
+
+                    </label>
+                    <br/>
+                    <label> 
+                        <input type="radio" id="questao6" name="questao6" value="4" required/>
+                        uma imagem pode ser inserida em um slide por meio de Inserir→ Imagem→ Clique em imagens→ Procure a imagem que deseja inserir → Abrir.
+
+
+
+
+
+
+
+
+                    </label>
+                    <br/>
+                    <label> 
+                        <input type="radio" id="questao6" name="questao6" value="5" required/>
+                        adota-se uma estrutura de slide inicial para uma apresentação por meio de Início→ Redefinir → Estrutura padrão→ Slide mestre.
+
+
+
+
+                    </label>
+                    <br/> 
+
+
+                    <p> 8 - Para desfazer a última ação do usuário deve-se utilizar:                    </p>
+                    <label> 
+                        <input type="radio" id="questao7" name="questao7" value="1" required/>
+                        Ctrl + C
+
+
+                    </label>
+                    <br/>
+                    <label> 
+                        <input type="radio" id="questao7" name="questao7" value="2" required/>
+                        Ctrl + Z
+
+
+
+                    </label>
+                    <br/>
+                    <label> 
+                        <input type="radio" id="questao7" name="questao7" value="3" required/>
+                        Ctrl + S
+
+                    </label>
+                    <br/>
+                    <label> 
+                        <input type="radio" id="questao7" name="questao7" value="4" required/>
+                        Alt + H + L
+
+
+                    </label>
+                    <br/>
+                   
+                    <label> 
+                        <input type="radio" id="questao7" name="questao7" value="5" required/>
+                        Ctrl + X 
+
+
+
+                    </label>
+                     <br/> 
+
+
+                     <p> 9 - Selecione a opção, no qual não faz parte da guia Formatar.                    </p>
+                    <label> 
+                        <input type="radio" id="questao8" name="questao8" value="1" required/>
+                        Preenchimento de Texto
+
+
+
+                    </label>
+                    <br/>
+                    <label> 
+                        <input type="radio" id="questao8" name="questao8" value="2" required/>
+                        Contorno do Texto 
+
+
+
+                    </label>
+                    <br/>
+                    <label> 
+                        <input type="radio" id="questao8" name="questao8" value="3" required/>
+                        Efeitos de Texto
+
+
+                    </label>
+                    <br/>
+                    <label> 
+                        <input type="radio" id="questao8" name="questao8" value="4" required/>
+                        Inserir 
+
+
+
+                    </label>
+                    <br/>
+                   
+                    <label> 
+                        <input type="radio" id="questao8" name="questao8" value="5" required/>
+                        Contorno da forma 
+
+
+
+
+                    </label>
+                     <br/> 
+                           
+
+                     <p> 10 - Uma das formas para inserir logomarcas ou textos em um slide do MS PowerPoint 2016 em português, de modo que eles possam ser exibidos automaticamente em todos os outros slides da apresentação, é o uso do recurso de:
+                    </p>
+                     <label> 
+                         <input type="radio" id="questao9" name="questao9" value="1" required/>
+                         Folheto Mestre
+
+ 
+ 
+ 
+                     </label>
+                     <br/>
+                     <label> 
+                         <input type="radio" id="questao9" name="questao9" value="2" required/>
+                         Slide Mestre
+
+ 
+ 
+ 
+                     </label>
+                     <br/>
+                     <label> 
+                         <input type="radio" id="questao9" name="questao9" value="3" required/>
+                         Guias
+
+ 
+ 
+                     </label>
+                     <br/>
+                     <label> 
+                         <input type="radio" id="questao9" name="questao9" value="4" required/>
+                         Macros
+
+ 
+ 
+ 
+                     </label>
+                     <br/>
+                    
+                     <label> 
+                         <input type="radio" id="questao9" name="questao9" value="5" required/>
+                         Estrutura de Tópicos
+ 
+ 
+ 
+                     </label>
+                      <br/> 
+                           
+
+                      <p> 11 - Incluído na Faixa de Opções da guia Início, no aplicativo PowerPoint, o comando Formatar Pincel é usado para:
+
+                    </p>
+                     <label> 
+                         <input type="radio" id="questao10" name="questao10" value="1" required/>
+                         copiar a formatação de um local e aplicá-la a outro.
+
+
+ 
+ 
+ 
+                     </label>
+                     <br/>
+                     <label> 
+                         <input type="radio" id="questao10" name="questao10" value="2" required/>
+                         colorir um texto ou uma imagem formatados em um slide.
+
+
+ 
+ 
+ 
+                     </label>
+                     <br/>
+                     <label> 
+                         <input type="radio" id="questao10" name="questao10" value="3" required/>
+                         Formatar um pincel animado para usá-lo em uma apresentação.
+
+
+ 
+ 
+                     </label>
+                     <br/>
+                     <label> 
+                         <input type="radio" id="questao10" name="questao10" value="4" required/>
+                         formatar uma paleta de tintas personalizada para a coloração de slides.
+
+
+ 
+ 
+ 
+                     </label>
+                     <br/>
+                    
+                     <label> 
+                         <input type="radio" id="questao10" name="questao10" value="5" required/>
+                         modificar manualmente as cores de uma apresentação durante sua execução.
+
+ 
+ 
+                     </label>
+                      <br/> 
+
+
+                      <p> 12 - Você precisa montar uma apresentação que terá o conteúdo mostrado em slides numa palestra, nesta apresentação terá textos, imagens, vídeos, imagens e sons. Qual o programa específico para este tipo de trabalho?
+
+
+                    </p>
+                     <label> 
+                         <input type="radio" id="questao11" name="questao11" value="1" required/>
+                         Word.
+
+ 
+ 
+ 
+                     </label>
+                     <br/>
+                     <label> 
+                         <input type="radio" id="questao11" name="questao11" value="2" required/>
+                         Power Point.
+
+
+
+ 
+ 
+ 
+                     </label>
+                     <br/>
+                     <label> 
+                         <input type="radio" id="questao11" name="questao11" value="3" required/>
+                         Excel.
+
+ 
+ 
+                     </label>
+                     <br/>
+                     <label> 
+                         <input type="radio" id="questao11" name="questao11" value="4" required/>
+                         Outlook. 
+
+
+ 
+ 
+ 
+                     </label>
+                     <br/>
+                    
+                     <label> 
+                         <input type="radio" id="questao11" name="questao11" value="5" required/>
+                         Edge
+
+ 
+                     </label>
+                      <br/>  
+            
+                        <button id="enviar" name="enviar">ENVIAR</button>
+                        <button type="reset" id="limpar" name="limpar">LIMPAR</button>
+                
+                        </div>
+                    </div>
+                    <div id="certificado">
+                        <h3 align="center"> Certificado </h3>
+                
+                        
+                            <p> Certificamos que o aluno(a): </p>
+
+                            <br/><br/>
+                       
+                      
+                            <div id="completar"> </div>
+                       
+                
+                        
+                           <strong><p> Que esse seja apenas o começo de uma série de conquistas e vitórias! Parabéns!!  </p> </strong>
+                        
+                           <button id="btn-download" onclick="download()">Download</button>
+                        </div>
+                
+                        
+                
+                        <script>
+                            var button = document.getElementById("btn-download");
+                
+                            function download(){
+                                button.style.display = "none";
+                                window.print();
+                            }
+                
+                        </script>
+            </body>
+
+            <script src="prova.js"></script>
+
+    </html>
